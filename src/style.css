@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+#rain{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  animation: rain-animation 2s 1 forwards;
+}
+
+
+@keyframes rain-animation {
+  from{
+    top: 0;
+  }
+
+  to{
+    top: 150%;
+  }
+}
